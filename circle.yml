@@ -5,13 +5,6 @@ machine:
         ANDROID_HOME: /Users/shimadawaya/Library/Android/sdk
         JAVA_OPTS: "-Xmx2048m -XX:MaxPermSize=1024m"
 
-dependencies:
-    cache_directories:
-        - ~/.android
-        - ~/android
-    override:
-        - ./install-dependencies.sh
-
 test:
     pre:
         - $ANDROID_HOME/tools/emulator -avd test-target -no-skin -no-audio -no-window -no-boot-anim:
