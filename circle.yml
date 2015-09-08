@@ -6,8 +6,8 @@ machine:
         JAVA_OPTS: "-Xmx2048m -XX:MaxPermSize=1024m"
 
 dependencies:
-  override:
-    - echo y | android update sdk --no-ui --filter android-21,build-tools-23.0.0
+  override:
+  - echo y | android update sdk --no-ui --all --filter build-tools-23.0.0
 
 test:
     override:
