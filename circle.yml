@@ -5,19 +5,20 @@ machine:
         ANDROID_HOME: /Users/shimadawaya/Library/Android/sdk
         JAVA_OPTS: "-Xmx2048m -XX:MaxPermSize=1024m"
 
+android:
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+dependencies:
+  override:
+    - echo y | android update sdk --no-ui --filter "android-21,build-tools-23.0.0"
+
 test:
-    pre:
-        - $ANDROID_HOME/tools/emulator -avd test-target -no-skin -no-audio -no-window -no-boot-anim:
-            background: true
-            parallel: true
-        - ./wait.sh:
-            parallel: true
     override:
-        - ./gradlew connectedAndroidTestDebug -PdisablePreDex
+      - echo "Nothing to do here"
 
 deployment:
-    develop:
-        branch: develop
+    master:
+        branch: master
         commands:
-            - ./gradlew assemble
-            - ./gradlew crashlyticsUploadDistributionDebug crashlyticsUploadDistributionRelease
+          - ./gradlew assembleRelease
