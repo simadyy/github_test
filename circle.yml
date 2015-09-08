@@ -14,7 +14,8 @@ test:
       - echo "Nothing to do here"
 
 deployment:
-    master:
-        branch: master
+    develop:
+        branch: develop
         commands:
-          - ./gradlew assembleRelease
+            - ./gradlew assemble
+            - ./gradlew crashlyticsUploadDistributionDebug crashlyticsUploadDistributionRelease
