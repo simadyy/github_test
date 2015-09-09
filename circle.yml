@@ -16,7 +16,7 @@ dependencies:
 test:
     override:
       - echo "Nothing to do here"
-      - echo pwd
+      - pwd
 
 deployment:
     develop:
