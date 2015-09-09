@@ -1,12 +1,12 @@
 general:
   artifacts:
-    - /home/ubuntu/github_test/app/
+    - /home/ubuntu/github_test/app/build/output/
 
 machine:
     java:
         version: openjdk7
     environment:
-        ANDROID_HOME: /Users/shimadawaya/Library/Android/sdk
+        ANDROID_HOME: /usr/local/android-sdk-linux
         JAVA_OPTS: "-Xmx2048m -XX:MaxPermSize=1024m"
 
 dependencies:
@@ -19,8 +19,7 @@ test:
       - ls /home/ubuntu/github_test/app/
 
 deployment:
-    develop:
-        branch: develop
-        commands:
-            - ./gradlew assemble
-            - ./gradlew crashlyticsUploadDistributionDebug crashlyticsUploadDistributionRelease
+    master:
+      branch: master
+      commands:
+        - ./gradlew assembleRelease
