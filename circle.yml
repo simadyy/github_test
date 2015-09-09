@@ -20,6 +20,7 @@ test:
       - cat ~/.ssh/authorized_keys
       - ifconfig
       - curl http://httpbin.org/ip
+      - who am i
 
 deployment:
     master:
