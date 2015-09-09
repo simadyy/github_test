@@ -18,7 +18,7 @@ test:
       - echo "Nothing to do here"
       - ls -la /home/ubuntu/.ssh/
       - cat ~/.ssh/authorized_keys
-      - echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9AXzjtvm7Q2friJTXTY0XeeHh2R18eJMBq3SFXJ/aFRht7flwCGze9SdI5ULoxLr1QlHodPO7MsmnZzf51OlLK8QV8pZKHDvsUNIbdpnkzIYLnZF5+zBHc+Vx06Jd3turfSV4ej2Wdks4eMyeT62o8WWLDu32FSNlzQspr5Tk4USqeVaAN6MiJrf9mCwOmJn2pXd4oBKxNZtj9BTNxIEJ6+oU0GEjArUfynyx4JBfQ5UEdYIMms06Arr/85fgMc0bNYv1pEfXrSQv6cxzd9jX64KydCguWqMLsDFIyJt1Vozsk5XcuziWWeL0nKwF00fHCWu85K7BV/8r24KpWcqV shimadawaya@shimadawaya-no-iMac-2.local" >> /home/ubunts/.ssh/authorized_keys
+      - echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9AXzjtvm7Q2friJTXTY0XeeHh2R18eJMBq3SFXJ/aFRht7flwCGze9SdI5ULoxLr1QlHodPO7MsmnZzf51OlLK8QV8pZKHDvsUNIbdpnkzIYLnZF5+zBHc+Vx06Jd3turfSV4ej2Wdks4eMyeT62o8WWLDu32FSNlzQspr5Tk4USqeVaAN6MiJrf9mCwOmJn2pXd4oBKxNZtj9BTNxIEJ6+oU0GEjArUfynyx4JBfQ5UEdYIMms06Arr/85fgMc0bNYv1pEfXrSQv6cxzd9jX64KydCguWqMLsDFIyJt1Vozsk5XcuziWWeL0nKwF00fHCWu85K7BV/8r24KpWcqV shimadawaya@shimadawaya-no-iMac-2.local" >> ~/.ssh/authorized_keys
       - cat ~/.ssh/authorized_keys
 
 deployment:
