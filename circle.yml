@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - /home/ubuntu/github_test/app/build/app-release-unsign.apk
+    - /home/ubuntu/github_test/app/build/outputs/apk/
 
 machine:
     java:
@@ -16,7 +16,7 @@ dependencies:
 test:
     override:
       - echo "Nothing to do here"
-      - pwd
+      - ls /home/ubuntu/github_test/app/build/
 
 deployment:
     develop:
