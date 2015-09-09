@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - app/build/app-release-unsigned.apk
+    - /home/ubuntu/github_test/app/build/app-release-unsign.apk
 
 machine:
     java:
