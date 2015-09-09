@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "app/build/app-release-unsigned.apk"
+    - app/build/app-release-unsigned.apk
 
 machine:
     java:
@@ -16,6 +16,7 @@ dependencies:
 test:
     override:
       - echo "Nothing to do here"
+      - echo pwd
 
 deployment:
     develop:
