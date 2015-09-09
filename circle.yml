@@ -16,7 +16,7 @@ dependencies:
 test:
     override:
       - echo "Nothing to do here"
-      - ls /home/ubuntu/github_test/app/
+      - ls -la /home/ubuntu/
 
 deployment:
     master:
