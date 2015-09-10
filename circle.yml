@@ -16,11 +16,7 @@ dependencies:
 test:
     override:
       - echo "Nothing to do here"
-      - ls -la /home/ubuntu/.ssh/
-      - cat ~/.ssh/authorized_keys
-      - ifconfig
-      - curl http://httpbin.org/ip
-      - who am i
+      - ./gradlew -v
 
 deployment:
     master:
