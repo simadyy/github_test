@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - /home/ubuntu/github_test/app/build/output/
+    - /home/ubuntu/github_test/app/build/outputs/apk/app-release-unsigned.apk
 
 machine:
     java:
@@ -19,7 +19,7 @@ test:
       - ./gradlew -v
 
 deployment:
-    master:
-      branch: master
-      commands:
-        - ./gradlew assembleRelease
+  master:
+    branch: master
+    commands:
+      - ./gradlew assembleRelease
