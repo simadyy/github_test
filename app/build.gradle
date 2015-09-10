@@ -29,7 +29,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("../gradle/cicleci_test.jks")
+            storeFile file("../gradle/circleci_test.jks")
             storePassword "hanakus0"
             keyAlias "circleci_test"
             keyPassword "hanakus0"
