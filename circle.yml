@@ -18,7 +18,7 @@ dependencies:
 test:
     override:
       - echo "Nothing to do here"
-      - ls -l ../
+      - ls -l ./
 
 deployment:
   master:
