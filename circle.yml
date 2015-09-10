@@ -18,7 +18,7 @@ dependencies:
 test:
     override:
       - echo "Nothing to do here"
-      - ls -l ../gradle/
+      - ls -l ../
 
 deployment:
   master:
