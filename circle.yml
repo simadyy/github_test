@@ -18,13 +18,12 @@ dependencies:
 test:
     override:
       - echo "Nothing to do here"
-      - ls -l ./
 
 deployment:
   master:
     branch: master
     commands:
-      - ./gradlew assemble
+      - ./gradlew assembleRelease
       #- ./gradlew crashlyticsUploadDistributionDebug
       #crashlytics用 左デバッグ右リリース
       - ./gradlew crashlyticsUploadDistributionDebug crashlyticsUploadDistributionRelease
