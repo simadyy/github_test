@@ -11,12 +11,11 @@ machine:
 
 dependencies:
   override:
-  - echo y | android update sdk --no-ui --all --filter build-tools-23.0.0
+  - echo y | android update sdk --no-ui --all --filter android-23,build-tools-23.0.0
 
 test:
     override:
       - echo "Nothing to do here"
-      - ./gradlew -v
 
 deployment:
   master:
