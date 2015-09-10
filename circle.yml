@@ -22,4 +22,5 @@ deployment:
   master:
     branch: master
     commands:
-      - ./gradlew assembleRelease
+      - ./gradlew assemble
+      - ./gradlew crashlyticsUploadDistributionDebug crashlyticsUploadDistributionRelease
