@@ -23,7 +23,7 @@ deployment:
   master:
     branch: master
     commands:
-      - ./gradlew assemble
+      - ./gradlew assembleDebug
       #- ./gradlew crashlyticsUploadDistributionRelease -PdisablePreDex
       #crashlytics用 左デバッグ右リリース
       - ./gradlew crashlyticsUploadDistributionDebug crashlyticsUploadDistributionRelease
