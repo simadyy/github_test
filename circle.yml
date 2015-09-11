@@ -23,7 +23,7 @@ deployment:
   master:
     branch: master
     commands:
-      - ./gradlew assembleRelease
-      #- ./gradlew crashlyticsUploadDistributionRelease
+      - ./gradlew assembleRelea
+      - ./gradlew crashlyticsUploadDistributionRelease
       #crashlytics用 左デバッグ右リリース
       #- ./gradlew crashlyticsUploadDistributionDebug crashlyticsUploadDistributionRelease
