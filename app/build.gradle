@@ -41,6 +41,7 @@ android {
             minifyEnabled false
             ext.betaDistributionReleaseNotes="テストのリリースです"
             ext.betaDistributionEmails="drop.shimada@gmail.com"
+            ext.bataDistributionEmails="kaminekoy@yahoo.co.jp"
         }
         release {
             minifyEnabled true
