@@ -26,6 +26,7 @@ deployment:
       - ./gradlew assembleDebug
       - ./gradlew crashlyticsUploadDistributionDebug -PdisablePreDex
 
+  release:
     branch: release
     commands:
       - ./gradlew assembleRelease
