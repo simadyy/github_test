@@ -25,5 +25,11 @@ deployment:
     commands:
       - ./gradlew assembleDebug
       - ./gradlew crashlyticsUploadDistributionDebug -PdisablePreDex
+
+    branch: release
+    commands:
+      - ./gradlew assembleRelease
+      - ./gradlew crashlyticsUploadDistributionRelease -PdisablePreDex
+
       #crashlytics用 左デバッグ右リリース
       #- ./gradlew crashlyticsUploadDistributionDebug crashlyticsUploadDistributionRelease

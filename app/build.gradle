@@ -41,12 +41,13 @@ android {
             minifyEnabled false
             ext.betaDistributionReleaseNotes="テストのリリースです"
             ext.betaDistributionEmails="drop.shimada@gmail.com"
-            ext.bataDistributionEmails="kaminekoy@yahoo.co.jp"
         }
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
+            ext.betaDistributionReleaseNotes="リリース用"
+            ext.betaDistributionEmails="drop.shimada@gmail.com"
         }
     }
 }
